@@ -167,12 +167,8 @@ public class TreeRunnerPlugin extends Plugin
 											itemName
 									);
 
-					System.out.println(
-							"Tree Runner selected planting item: "
-									+ itemName
-									+ " -> "
-									+ plantedSpecies
-					);
+
+					;
 				}
 			}
 		}
@@ -201,10 +197,6 @@ public class TreeRunnerPlugin extends Plugin
 
 		if (detectedPatch == null)
 		{
-			System.out.println(
-					"Tree Runner could not identify a patch near player at "
-							+ playerLocation
-			);
 
 			return;
 		}
@@ -236,23 +228,9 @@ public class TreeRunnerPlugin extends Plugin
 			pendingPlantingTicksRemaining =
 					5;
 
-			System.out.println(
-					"Tree Runner pending planting: "
-							+ plantedSpecies
-							.getDisplayName()
-							+ " at "
-							+ detectedPatch
-							.getDisplayName()
-			);
 		}
 
-		if (clearingPatch)
-		{
-			System.out.println(
-					"Tree Runner clearing interaction at "
-							+ detectedPatch
-							.getDisplayName()
-			);
+		if (clearingPatch) {
 		}
 	}
 	@Subscribe
@@ -286,10 +264,6 @@ public class TreeRunnerPlugin extends Plugin
 				);
 
 		if (plantedSpecies == null) {
-			System.out.println(
-					"Tree Runner could not identify planted species: "
-							+ speciesName
-			);
 
 			return;
 		}
@@ -309,11 +283,8 @@ public class TreeRunnerPlugin extends Plugin
 				);
 
 		if (detectedPatch == null) {
-			System.out.println(
-					"Tree Runner planted "
-							+ plantedSpecies.getDisplayName()
-							+ " but could not identify nearby patch."
-			);
+
+			;
 
 			return;
 		}
@@ -330,12 +301,7 @@ public class TreeRunnerPlugin extends Plugin
 				detectedPatch
 		);
 
-		System.out.println(
-				"Tree Runner recorded: "
-						+ plantedSpecies.getDisplayName()
-						+ " at "
-						+ detectedPatch.getDisplayName()
-		);
+
 	}
 	private int countInventoryItem(
 			int itemId
@@ -387,15 +353,6 @@ public class TreeRunnerPlugin extends Plugin
 		);
 
 		panel.refreshCurrentRoute();
-
-		System.out.println(
-				"Tree Runner confirmed planting: "
-						+ pendingPlantingSpecies
-						.getDisplayName()
-						+ " at "
-						+ pendingPlantingPatch
-						.getDisplayName()
-		);
 
 		clearPendingPlanting();
 	}

@@ -1410,10 +1410,7 @@ public class TreeRunnerPanel extends PluginPanel
 
             if (image == null)
             {
-                System.out.println(
-                        "Tree Runner could not find icon: "
-                                + resourcePath
-                );
+
 
                 return null;
             }
@@ -1439,10 +1436,6 @@ public class TreeRunnerPanel extends PluginPanel
         }
         catch (Exception e)
         {
-            System.out.println(
-                    "Tree Runner failed to load icon for: "
-                            + species.getDisplayName()
-            );
 
             return null;
         }
