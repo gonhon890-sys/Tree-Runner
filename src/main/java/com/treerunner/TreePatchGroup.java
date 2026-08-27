@@ -1,0 +1,23 @@
+package com.treerunner;
+
+public enum TreePatchGroup
+{
+    LUMBRIDGE,
+    VARROCK,
+    FALADOR,
+    TAVERLEY,
+    GNOME_STRONGHOLD,
+    FARMING_GUILD,
+    NEMUS_RETREAT,
+    CATHERBY,
+    TREE_GNOME_MAZE,
+    BRIMHAVEN,
+    LLETYA,
+    KASTORI,
+    FOSSIL_ISLAND,
+    LOCUS_OASIS,
+    ANGLERS_RETREAT,
+    TAI_BWO_WANNAI,
+    SUMMER_SHORE,
+    PRIFDDINAS
+}
